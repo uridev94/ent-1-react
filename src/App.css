@@ -1,4 +1,65 @@
+/*-----------Reset-------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body{
   background-color: #222;
   color: #fff;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+}
+
+/*-----------App-------------*/
+
+.app{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-evenly;
+}
+
+.app__title {
+  text-shadow: 2px 2px orange;
+}
+
+.text { 
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text p {
+  text-align: center;
+  background-color: brown;
+  padding: 7px 14px;
+  border-radius: 7px;
+}
+
+.btn { 
+  background-color: orange;
+  padding: 7px 14px;
+  border-radius: 7px;
+  transition: transform .5s;
+}
+
+.btn:hover { 
+  transform: scale(1.1);
+  transition: transform .5s;
 }
